@@ -1,0 +1,11 @@
+first creating a server : 
+
+POST | https://ptb.discord.com/api/v9/guilds | {"name":"VO!D.'s server","icon":null,"channels":[],"system_channel_id":null,"guild_template_code":"2TffvPucqHkN"}
+RESP | {"id": "1040886156855869521", "name": "VO!D.'s server", "icon": null, "description": null, "splash": null, "discovery_splash": null, "features": [], "joined_at": "2022-11-12T07:09:58.545999+00:00", "emojis": [], "stickers": [], "banner": null, "owner_id": "1039525041030840401", "application_id": null, "region": "japan", "afk_channel_id": null, "afk_timeout": 300, "system_channel_id": "1040886157317255199", "widget_enabled": false, "widget_channel_id": null, "verification_level": 0, "roles": [{"id": "1040886156855869521", "name": "@everyone", "description": null, "permissions": "1071698660929", "position": 0, "color": 0, "hoist": false, "managed": false, "mentionable": false, "icon": null, "unicode_emoji": null, "flags": 0}], "default_message_notifications": 0, "mfa_level": 0, "explicit_content_filter": 0, "max_presences": null, "max_members": 500000, "max_stage_video_channel_users": 0, "max_video_channel_users": 25, "vanity_url_code": null, "premium_tier": 0, "premium_subscription_count": 0, "system_channel_flags": 0, "preferred_locale": "en-US", "rules_channel_id": null, "public_updates_channel_id": null, "hub_type": null, "premium_progress_bar_enabled": false, "nsfw": false, "nsfw_level": 0}
+
+then joining the bot to the server :
+
+SOLVE HCAPTCHA | f5561ba9-8f1e-40ca-9b5b-a0b3f719ef34:discord.com
+POST | https://ptb.discord.com/api/v9/oauth2/authorize?client_id=CLIENT_ID&scope=bot%20applications.commands | {"captcha_key":"HCAPTCHA_TOKEN_HERE", "guild_id":"","permissions":"8","authorize":true}
+
+then joining auths to the server and then looping the process
